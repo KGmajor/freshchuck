@@ -36,7 +36,7 @@
 				gl_FragColor = vec4( color, 1.0 );
 			}
 		</script>
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="spotifymodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content bg-transparent">
                       <div class="modal-header bg-transparent">
@@ -46,14 +46,42 @@
                       </div>
                       <div class="modal-body ">
                             <div class="container-fluid">
-                                <iframe class="embed-responsive-item" allowtransparency="true" style="background: #000000" src="https://open.spotify.com/embed/artist/49ezoeJ6Z2JbAXR6Nmy7Gi" width="400" height="480" allow="encrypted-media"></iframe>
+                                <iframe class="embed-responsive-item" width="100%" height="465" scrolling="no" allowtransparency="true" style="background: #000000" src="https://open.spotify.com/embed/artist/49ezoeJ6Z2JbAXR6Nmy7Gi" width="400" height="480" allow="encrypted-media"></iframe>
                             </div>
                       </div>
                     </div>
                   </div>
-{#                <iframe src="https://open.spotify.com/embed/artist/49ezoeJ6Z2JbAXR6Nmy7Gi" width="400" height="480" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>#}
-{#                <iframe width="350" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/45146688&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>#}
-
+            </div>
+            <div class="modal fade" id="soundcloudmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content bg-transparent">
+                      <div class="modal-header bg-transparent">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body ">
+                            <div class="container-fluid">
+                                <iframe class="embed-responsive-item" width="100%" height="465" scrolling="no" frameborder="no" allowtransparency="true" allow="autoplay" src="https://w.soundcloud.com/player/?url=soundcloud.com/freshchuckdaily&amp;auto_play=false&amp;buying=true&amp;liking=true&amp;download=true&amp;sharing=true&amp;show_artwork=true&amp;show_comments=false&amp;show_playcount=false&amp;show_user=true&amp;hide_related=false&amp;visual=true&amp;start_track=13&amp;callback=true"></iframe>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="modal fade" id="contactmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content bg-dark">
+                      <div class="modal-header bg-dark">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body text-light">
+                          <h3>For beats and/or mixing:</h3>
+                          <a href="mailto:freshchuck@gmail.com" class="text-light">Freshchuck@gmail.com</a>
+                      </div>
+                    </div>
+                  </div>
             </div>
 		<script>
 			if ( WebGL.isWebGLAvailable() === false ) {
