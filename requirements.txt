@@ -8,7 +8,7 @@ decorator==4.3.0
 Flask==1.0.2
 Flask-DebugToolbar==0.10.1
 heroku==0.1.4
-httpie==1.0.2
+httpie==1.0.3
 idna==2.8
 ipython==7.2.0
 ipython-genutils==0.2.0
